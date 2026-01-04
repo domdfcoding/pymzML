@@ -1,0 +1,23 @@
+from . import spec as spec
+from _typeshed import Incomplete
+
+class Factory:
+    filename: Incomplete
+    plots: Incomplete
+    titles: Incomplete
+    lookup: Incomplete
+    y_max: Incomplete
+    y_min: Incomplete
+    x_max: Incomplete
+    x_min: Incomplete
+    offset: int
+    MS_precisions: Incomplete
+    function_mapper: Incomplete
+    style_options: Incomplete
+    def __init__(self, filename: Incomplete | None = None) -> None: ...
+    def new_plot(self, MS_precision: str = '5e-6', title: Incomplete | None = None) -> None: ...
+    def newPlot(self, MS_precision: str = '5e-6', title: Incomplete | None = None) -> None: ...
+    def add(self, data, color=(0, 0, 0), style: str = 'sticks', mz_range: Incomplete | None = None, int_range: Incomplete | None = None, opacity: float = 0.8, dash: str = 'solid', name: Incomplete | None = None, plot_num: int = -1, title: Incomplete | None = None): ...
+    def info(self) -> None: ...
+    def save(self, filename: Incomplete | None = None, mz_range: Incomplete | None = None, int_range: Incomplete | None = None, layout: Incomplete | None = None, write_pdf: bool = False) -> None: ...
+    def get_data(self): ...
